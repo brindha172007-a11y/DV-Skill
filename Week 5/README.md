@@ -84,3 +84,24 @@ Daily return calculations
 Daily return distribution histogram
 Conclusion
 This project demonstrates how Python can be used for stock market analysis. By visualizing stock prices, calculating moving averages, and analyzing daily returns, investors and analysts can better understand Shopify's stock performance and market behavior.
+
+
+ealthcare Data Analysis – Part B
+Project Overview
+This project performs advanced analysis on a healthcare dataset using Python. The study focuses on patient admissions, billing amounts, medical conditions, insurance providers, hospital stay duration, and correlation analysis. Various visualizations are used to identify healthcare trends and patterns.
+
+Objectives
+Analyze monthly patient admissions.
+Identify peak admission periods.
+Compare billing amounts across medical conditions.
+Study the impact of insurance providers on billing.
+Visualize billing amount distributions.
+Analyze relationships between age, hospital stay duration, and billing amount.
+Technologies Used
+Python
+Pandas
+Matplotlib
+Seaborn
+Jupyter Notebook / Google Colab
+Dataset Features
+The dataset 
