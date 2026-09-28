@@ -1,107 +1,72 @@
-Shopify Stock Analysis
+Healthcare Data Analysis
 Project Overview
-This project performs stock market analysis on Shopify (SHOP) stock data using Python. The analysis includes stock price visualization, moving average calculations, and daily return analysis to understand stock performance trends over time.
+This project analyzes healthcare dataset records using Python. The analysis focuses on medical codes, hospital stay duration, billing amounts, and patient admission/discharge information. The goal is to gain insights into healthcare operations and patient treatment data.
 
 Objectives
-Load and analyze Shopify stock data.
-Visualize stock closing prices over time.
-Calculate 20-day and 50-day moving averages.
-Analyze daily stock returns.
-Understand stock market trends using data visualization.
+Load and explore healthcare data.
+Check for missing values in medical codes.
+Standardize medical codes for consistency.
+Calculate hospital stay duration.
+Analyze billing amount statistics.
+Generate descriptive insights from the dataset.
 Technologies Used
 Python
 Pandas
 Matplotlib
 Seaborn
 Google Colab
-Dataset
-The dataset contains Shopify stock market information including:
+Dataset Features
+The dataset contains information such as:
 
-Date
-Closing Price
-Other stock-related attributes
-The dataset is loaded from a CSV file and the date column is converted into datetime format for analysis.
-
+Medical Code
+Admission Date
+Discharge Date
+Billing Amount
+Hospital Stay Details
 Project Workflow
-1. Import Required Libraries
+1. Import Libraries
 The project uses:
 
-
-
-Healthcare Data Analysis – Part B
-Project Overview
-This project performs advanced analysis on a healthcare dataset using Python. The study focuses on patient admissions, billing amounts, medical conditions, insurance providers, hospital stay duration, and correlation analysis. Various visualizations are used to identify healthcare trends and patterns.
-
-Objectives
-Analyze monthly patient admissions.
-Identify peak admission periods.
-Compare billing amounts across medical conditions.
-Study the impact of insurance providers on billing.
-Visualize billing amount distributions.
-Analyze relationships between age, hospital stay duration, and billing amount.
-Technologies Used
-Python
-Pandas
-Matplotlib
-Seaborn
-Jupyter Notebook / Google Colab
-Dataset Features
-The dataset 
-
-Pandas for data manipulation
-Matplotlib and Seaborn for visualization
+Pandas for data processing
+Matplotlib for visualization
+Seaborn for data analysis and plotting
 2. Load Dataset
-The Shopify stock dataset is loaded from a CSV file and displayed for initial inspection.
+The healthcare dataset is loaded from a CSV file and inspected for data quality.
 
-3. Stock Price Visualization
-A line chart is created to visualize Shopify's closing stock price over time. This helps identify trends and market movements.
+3. Missing Value Analysis
+The Medical_Code column is checked for missing values to ensure data completeness.
 
-4. Moving Average Analysis
-The following moving averages are calculated:
+4. Medical Code Standardization
+Medical codes are standardized by removing the "ICD-10-" prefix, making the data easier to analyze and compare.
 
-20-Day Moving Average (MA20)
-50-Day Moving Average (MA50)
-These indicators help smooth short-term fluctuations and highlight long-term trends.
-
-5. Daily Return Calculation
-Daily stock returns are calculated using percentage change in closing prices.
+5. Hospital Stay Analysis
+Admission and discharge dates are converted into datetime format, and hospital stay duration is calculated.
 
 Formula:
 
-Daily Return (%) = Percentage Change in Closing Price × 100
+Hospital Stay Days = Discharge Date − Admission Date
 
-This metric helps measure day-to-day stock performance.
+This helps evaluate patient stay periods and hospital resource utilization.
 
-6. Return Distribution Analysis
-A histogram with density estimation is plotted to analyze the distribution of daily returns and understand stock volatility.
+6. Billing Amount Analysis
+Descriptive statistics are generated for billing amounts, including:
+
+Count
+Mean
+Standard Deviation
+Minimum Value
+Maximum Value
+Quartiles (25%, 50%, 75%)
+7. Hospital Stay Statistics
+Summary statistics are also calculated for hospital stay duration to understand patient hospitalization trends.
 
 Outputs
-The project generates:
+The project produces:
 
-Shopify stock closing price trend chart
-20-day and 50-day moving average chart
-Daily return calculations
-Daily return distribution histogram
+Medical code frequency analysis
+Standardized medical codes
+Hospital stay duration calculations
+Billing amount statistics
+Healthcare dataset summary reports
 Conclusion
-This project demonstrates how Python can be used for stock market analysis. By visualizing stock prices, calculating moving averages, and analyzing daily returns, investors and analysts can better understand Shopify's stock performance and market behavior.
-
-
-ealthcare Data Analysis – Part B
-Project Overview
-This project performs advanced analysis on a healthcare dataset using Python. The study focuses on patient admissions, billing amounts, medical conditions, insurance providers, hospital stay duration, and correlation analysis. Various visualizations are used to identify healthcare trends and patterns.
-
-Objectives
-Analyze monthly patient admissions.
-Identify peak admission periods.
-Compare billing amounts across medical conditions.
-Study the impact of insurance providers on billing.
-Visualize billing amount distributions.
-Analyze relationships between age, hospital stay duration, and billing amount.
-Technologies Used
-Python
-Pandas
-Matplotlib
-Seaborn
-Jupyter Notebook / Google Colab
-Dataset Features
-The dataset 
+This project demonstrates how healthcare data can be analyzed using Python. By examining medical codes, hospital stay durations, and billing information, healthcare organizations can better understand operational performance and patient care trends.
