@@ -158,7 +158,7 @@ Student performance statistics, percentage calculations, and outlier analysis.
 This project demonstrated the application of data analytics in the healthcare sector. The analysis provided valuable insights into patient care, hospital operations, and billing trends while improving my data visualization and analytical skills.
 
 
-# Students Performance Visualization
+## Week 8 Students Performance Visualization
 
 ## Overview
 This project analyzes student performance data and creates visualizations using Python.
